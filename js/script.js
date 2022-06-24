@@ -6,18 +6,16 @@
 */
 
 /* Invento lista email */
-const emailList = ['ciao@gmail.com', 'ciao@libero.com', 'ciao@tiscali.com', 'ciao@icloud.com'];
+const emailList = ['ciao@gmail.com', 'ciao@libero.com', 'ciao@tiscali.com', 'ciao@icloud.com', 'ciao@hotmail.com'];
+console.table(emailList);
 
 /* Chiedo all'utent l'email */
 let userEmail = prompt('Qual è il tuo indirizzo email?');
+console.log(userEmail)
 
-/*for (let i = userEmail; i < emailList.length; i++) {
-    console.log(i)
-}*/
+/* Controllo che l'email inserito sia in lista + mostro in console l'esito */ 
 
-/* Controllo che l'email inserito sia in lista */ 
-if (userEmail = emailList) {
-    console.log('user ' + ${userEmail} + ': ' + 'permesso di accesso autorizzato.' );
-} else (userEmail != emailList) {
-    console.log('Permesso di accesso non autorizzato.');
-} 
+if (userEmail != emailList) {
+    console.log( userEmail + ': ' + 'Permesso di accesso non autorizzato.');
+} else if (
+    console.log(userEmail + ': ' + 'permesso di accesso autorizzato.'));
