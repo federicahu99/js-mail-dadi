@@ -10,12 +10,25 @@ const emailList = ['ciao@gmail.com', 'ciao@libero.com', 'ciao@tiscali.com', 'cia
 console.table(emailList);
 
 /* Chiedo all'utent l'email */
-let userEmail = prompt('Qual è il tuo indirizzo email?');
-console.log(userEmail)
+let i = prompt('Qual è il tuo indirizzo email?');
+console.log(i)
 
 /* Controllo che l'email inserito sia in lista + mostro in console l'esito */ 
+for (let i = 0; i < emailList.length; i++) {
+    if (i == emailList) {
+        console.log(i + ': ' + 'permesso di accesso autorizzato.');
+    }
+    else {
+        console.log(i + ': ' + 'Permesso di accesso non autorizzato.');
+    }
+}
 
+
+
+
+/*
 if (userEmail != emailList) {
     console.log( userEmail + ': ' + 'Permesso di accesso non autorizzato.');
 } else if (
     console.log(userEmail + ': ' + 'permesso di accesso autorizzato.'));
+    */
