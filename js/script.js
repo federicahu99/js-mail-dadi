@@ -35,11 +35,15 @@ if (flag == false) {
 3-Porto gli lementi nel Dom
 */
 
+// Prendo elementi dal DOM 
+let btnComputer = document.getElementById('bot-btn');
+let btnPlayer = document.getElementById('player-btn');
 
 // Creo generatori casuali
-bot = Math.floor (Math.random(1 , 6) * 6);
-player = Math.floor (Math.random(1 , 6) * 6);
-console.log(bot, player);
+bot = Math.floor (Math.random(1 , 6) * 6 + 1);
+player = Math.floor (Math.random(1 , 6) * 6 + 1);
+console.log('dado-bot:' + bot,'dado-player:' + player);
+
 
 // Dichiaro il vincitore o il pareggio 
 if(bot < player) {
